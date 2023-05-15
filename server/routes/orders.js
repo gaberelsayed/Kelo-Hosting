@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const CheckAuth = require("../middleware/CheckAuth");
+const CheckAuth = require("../middleware/CheckAuth");               
 const Orders = require("../database/schema/orders.schema");
 
 router.get("/fetch-orders/:sortType", CheckAuth, async (req, res) => {
